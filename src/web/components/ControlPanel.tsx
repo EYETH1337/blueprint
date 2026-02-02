@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Plus, Trash2, RotateCcw, Copy, Download, Upload, Grid3X3, Maximize2 } from 'lucide-react';
+import { Plus, Trash2, RotateCcw, Copy, Download, Upload, Layout, Maximize2 } from 'lucide-react';
 import { NodeData } from '../types';
 
 interface ControlPanelProps {
@@ -114,7 +114,7 @@ const ControlPanel: React.FC<ControlPanelProps> = ({
             onMouseEnter={(e) => (e.currentTarget.style.background = 'rgba(255,255,255,0.12)')}
             onMouseLeave={(e) => (e.currentTarget.style.background = 'rgba(255,255,255,0.07)')}
           >
-            <Grid3X3 size={14} style={{ margin: '0 auto' }} />
+            <Layout size={14} style={{ margin: '0 auto' }} />
           </button>
           <button
             onClick={onRecenter}

@@ -1,4 +1,5 @@
-import { Graph, Node, Connection, Pin, PinType as CorePinType, PinDirection } from '../types';
+import { Graph } from '../graph';
+import { Node, Connection, Pin, PinType as CorePinType, PinDirection } from '../types';
 
 /**
  * Type definitions for Web UI
@@ -181,5 +182,6 @@ export class UIToGraphAdapter {
 }
 
 // Re-export core types for convenience
-export { Graph, Node, Connection } from '../types';
+export { Graph } from '../graph';
+export { Node, Connection } from '../types';
 export type { Pin as CorePin, PinType as CorePinType, PinDirection } from '../types';
